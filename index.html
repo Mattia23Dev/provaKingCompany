@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>King Company Prova</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h4>Inserisci un numero</h4>
+      <form>
+        <div class="input-field">
+          <input class="input" type="number" id="number"/>
+        </div>
+        <input class="button" type="button" onclick="handleClick()" value="Calcola la Resistenza!" />
+      </form>
+      <h4 id="result"></h4>
+    </div>
+
+    <div class="container">
+        <h4>Inserisci un array di numeri separati da virgola</h4>
+        <form>
+          <div class="input-field">
+            <input type="text" class="input" id="inputArray">
+          </div>
+          <input class="button" type="button" onclick="showResult()" value="Calcola il numero più frequente!" />
+        </form>
+        <h4 id="resultArray"></h4>
+    </div>
+
+    <div class="container">
+        <h4>Inserisci un array e indica quanti numeri frequenti vuoi calcolare (k)</h4>
+        <div class="input-field">
+            <label for="array-input">Inserisci gli elementi dell'array:</label>
+            <input type="text" id="array-input">
+            <br>
+            <label for="k-input">Inserisci k:</label>
+            <input type="number" id="k-input">
+            <br>
+            <input onclick="clickArray()" type="button" class="button" value="Calcola i k numeri più frequenti"/>
+            <br>
+            <br>
+            <h4 id="resultK"></h4>
+        </div>
+    </div>
+  </body>
+</html>
